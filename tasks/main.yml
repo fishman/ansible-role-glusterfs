@@ -13,5 +13,5 @@
 - include: setup-{{ ansible_distribution }}.yml
   when: ansible_os_family == 'Debian'
 
-- name: Ensure GlusterFS is started and enabled at boot.
-  service: "name={{ glusterfs_daemon }} state=started enabled=yes"
+# - name: Ensure GlusterFS is started and enabled at boot.
+#   service: "name={{ glusterfs_daemon }} state=started enabled=yes"
